@@ -1,0 +1,107 @@
+\documentclass[hidelinks,10pt]{article}
+
+    \usepackage[T1]{fontenc} % font encoding
+    \usepackage{mathpazo} % Palatino fonc
+    \usepackage[export]{adjustbox} % image placement
+    \usepackage{graphicx} % insert image
+    \graphicspath{{images/}{../images/}} % allows images to be accessed from sections folders 
+    \usepackage{caption} % image caption
+    \captionsetup[figure]{font=small,labelfont=small}
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+ 
+    \usepackage{geometry} % Used to adjust the document margins
+	 \geometry{a4paper, left=30mm, right=30mm, top=30mm, bottom=30mm}
+
+    \usepackage{enumitem} % Allows list spacing to be compressed
+    \usepackage{amsmath,amssymb} % Equations
+    \usepackage{makecell}
+ 
+    \usepackage{hyperref} % hyperlinks
+    \hypersetup{colorlinks=true, allcolors=., urlcolor=blue} %options: citecolor=red, linkcolor=magenta, filecolor=cyan      
+     
+    \usepackage{cite} % combines citation numbers e.g [1-3] rather than [1, 2, 3]
+    \usepackage{subfiles}
+    \usepackage{subcaption}
+    \usepackage{chngcntr}
+    \usepackage[titletoc]{appendix}
+    \usepackage[nottoc]{tocbibind}
+    \usepackage{framed} 
+    \usepackage{lscape} 
+    \counterwithout{figure}{section}
+    \counterwithout{table}{section}
+    \counterwithout{equation}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{A genomic transmission graph for modelling parasite transmission dynamics and population genetics}
+
+\date{Draft version 2 March 2023.  Confidential}
+
+\author{Dominic Kwiatkowski}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+The genetic structure of a parasite population is shaped by its transmission dynamics but superinfection and recombination make this relationship complex and hard to analyse.  This paper aims to simplify the problem by introducing the concept of a genomic transmission graph whose essential parameters are the effective number of hosts, the quantum of transmission and the crossing rate of transmission chains.  This enables rapid simulation of coalescence times allowing for superinfection and recombination, and it also provides a mathematical framework for analysis of within-host variation. Taking malaria as an example, we use this theoretical model to examine how transmission dynamics and migration affect parasite genetic variation, including haplotypic metrics of recent common ancestry.  We show how key parameters of this model can be inferred from deep sequencing data, and we discuss how these concepts could help in using genomic surveillance data for disease control and elimination. 
+
+\end{abstract}
+
+%including haplotypic metrics of recent common ancestry
+
+% within hosts and in the local population
+
+%\tableofcontents
+
+\subfile{01_introduction}
+
+\subfile{02_structure}
+
+\subfile{03_coalescence}
+
+\subfile{04_point_locus}
+
+\subfile{05_haplotype_locus}
+
+\subfile{06_migration}
+
+\subfile{07_within_host}
+
+\subfile{08_scenarios}
+
+\subfile{09_discussion}
+
+%\subfile{A4_acknowledgements}
+
+%\addcontentsline{toc}{section}{Acknowledgments}
+
+\bibliography{../Refs/refs}
+\bibliographystyle{unsrt}
+
+\clearpage
+
+\subfile{A0_glossary}
+
+\clearpage
+
+\subfile{A2_methods}
+
+%\clearpage
+
+%\subfile{A3_code}
+
+%%%APPENDICES%%%
+%\begin{appendices}
+%\clearpage
+%\appendixpage
+%\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+%\subfile{A1_biology}
+%\subfile{A2_methods}
+%\end{appendices}
+
+\end{document}
