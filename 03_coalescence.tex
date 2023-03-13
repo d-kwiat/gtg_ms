@@ -7,10 +7,10 @@
 
 The idealised genomic transmission graph naturally lends itself to coalescent analysis.  To start with a simple example, consider the special case of a parasite population with no superinfection, i.e. $\chi =0$.  We shall sample two alleles at a point locus and follow their lineages back in time until they coalesce in a common ancestral allele, as illustrated in figure \ref{fig:coalescent}.  Let \textbf{T} be a random variable representing time to coalescence of the two alleles.
 
-\begin{figure}[h!]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=12cm]{180929a_tg_coalescence.png}
-\caption{\textbf{Coalescence of two lineages in the absence of superinfection}. Each column represents one generation of the transmission graph: the light grey block on the right represents all hosts and the dark grey block on the left represents the within-host population of a single host.    Imagine that we sample two alleles from different hosts (red and blue circles on the far right) and follow their lineages back in time.  The two lineages remain in separate transmission chains for several generations until they meet in a common host.  They are then cotransmitted until they coalesce in a common ancestral allele (purple circle on the far left).}
+\caption{\textbf{Coalescence of two lineages in the absence of superinfection}. Each column represents one generation of the transmission graph: the light grey block on the right represents all hosts and the dark grey block on the left represents the within-host population of a single host.  Imagine that we sample two alleles from different hosts (red and blue circles on the far right) and follow their lineages back in time.  The two lineages remain in separate transmission chains for several generations until they meet in a common host.  They are then cotransmitted until they coalesce in a common ancestral allele (purple circle on the far left).}
 \label{fig:coalescent}
 \end{figure}
 
@@ -33,7 +33,7 @@ Thus if $\chi=0$ and $Q = 1$ then two alleles have an expected coalescence time 
 
 We shall now consider the general case of a parasite population in which superinfection can occur, i.e. $\chi \ge 0$.  As in the previous section, we sample two alleles at a point locus and follow their lineages back in time, but the journey to coalescence is more complicated.  As illustrated in figure \ref{fig:graph_1}, this can be broken down into three stages:
 
-\begin{figure}[h!]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{181003_tg_lineage.png}
 \caption{\textbf{A graph of coalescing lineages}.  Imagine that we sample two alleles from different hosts, as depicted by the red and blue circles on the far right.  The corresponding lineages (red and blue lines) can be mapped onto specific transmission chains (thick grey lines) and individual hosts (grey blobs).   Proceeding back in time, the corresponding lineages occasionally meet in the same host and are cotransmitted for a period of time before separating again to different hosts.  Eventually they meet and coalesce in a common ancestral allele represented by the purple circle on the far left.}
@@ -88,7 +88,7 @@ In a similar manner we can define the transition probabilities for all possible 
 
 \renewcommand\theadalign{bc} 
 
-\begin{table}[h!] 
+\begin{table}[htb] 
 \centering
 \large{
 \begin{tabular}{l | c c c } 
@@ -113,7 +113,7 @@ In a similar manner we can define the transition probabilities for all possible 
 
 Table \ref{tab:main_tr_matrix} gives us a transition probability matrix that allows us to evaluate the state of two lineages at any point in time by Markov chain simulation (Methods section \ref{supp_mcs}).  We start the simulation by sampling two imaginary alleles at a point locus, and then following their lineages back in time through the generations.  To study between-host variation we imagine that the two alleles are sampled from different hosts, i.e. the two lineages are separated at the start of the simulation. Alternatively, we can study within-host variation by imagining that the two alleles are sampled from the same host, i.e. the lineages are cotransmitted at the start of the simulation.  From this we can calculate the probability distribution of coalescence time for two alleles, sampled either between-host or within-host, as illustrated in figure \ref{fig:main_markov_4}.   
 
-\begin{figure}[h!]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{221029_tc_dist.png}
 \caption{\textbf{State of two lineages as we proceed back in time after sampling two alleles.}  If we sample the alleles from different hosts (\textbf{left panel}) then the lineages are initially separated (blue) but over time there is an increasing probability that they are cotransmitted (green) and eventually they coalesce (red).  If we sample alleles from the same host (\textbf{right panel}) then the lineages are initially cotransmitted. In this example the transmission parameters are $N_h=30$, $Q=5$, $\chi=0.5$.  The horizontal axis is offset by +1 to allow the use of a log scale. \href{https://d-kwiat.github.io/gtg/coalescence-time-basic.html}{See worked example}.

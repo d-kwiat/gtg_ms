@@ -8,7 +8,7 @@
 
 \section{A framework for modelling the coalescent process}
 
-\subsection{The coalescent process when $\chi = 0$}
+\subsection{The coalescent process when \texorpdfstring{$\chi = 0$}{chi is zero}}
 \label{supp_coal_chi_zero}
 
 To understand the coalescent properties of the genomic transmission graph, it is instructive to start by considering a parasite population with no superinfection, i.e. $\chi =0$.
@@ -38,14 +38,13 @@ j \Big( \frac{1}{Q} \Big)
 Here we are allowing for the possibility that coalescence could occur as soon as two lineages meet in the same host, as represented by the condition $j=0$ in the above expression.   We can now combine these two parts to get the expectation of time to coalescence:
 
 \begin{equation*}
-\label{eq:Nh+Q-1}
 E \{ \textbf{T} \}   
 = T_1 + T_2
 = N_h + Q - 1
 \end{equation*}
 
 %%%%%%%%%%%%%%%%
-\subsection{The coalescent process when $\chi \ge 0$}
+\subsection{The coalescent process when \texorpdfstring{$\chi \ge 0$}{chi >= 0}}
 \label{supp_coalescent}
 %%%%%%%%%%%%%%%%
 
@@ -175,7 +174,7 @@ To study between-host variation we specify that two alleles are sampled from dif
 
 %%%%%%%%%%%%
 
-\subsection{Coalescence time when $\chi =1$ and $Q =1$}
+\subsection{Coalescence time when \texorpdfstring{$\chi =1$ and $Q =1$}{chi=1 and Q=1}}
 \label{supp_anomaly}
 
 In general, two alleles sampled from the same host coalesce more rapidly than two alleles sampled from different hosts.   This difference is marked when $\chi=0$.  As $\chi$ increases, the coalescence time of two alleles sampled from the same host starts to approach that of two alleles sampled from different hosts, and when $\chi=1$ the difference becomes relatively small.  
@@ -198,14 +197,12 @@ Let $H$ be the heterozygosity of our point locus, where $H = 1 - G$.  We obtain 
   
 \begin{equation*}
 E \{ H  \} = 1 - \sum_{i=1}^\infty \Pr \{ \textbf{T} = i \} \times (1-u)^{2i}
-\label{eq:supp_het_pdf}
 \end{equation*}
 
 Let $T_C$ be the mean time to coalescence measured in generations.  If $u$ is sufficiently small (say $<10^{-5}$) we can safely ignore factors of $u^2$ and above to make the approximation
 
 \begin{equation*}
 E \{ H  \} \approx 1 - \sum_{i=1}^\infty \Pr \{ \textbf{T} = i \}  + 2u \sum_{i=1}^\infty i\Pr \{ \textbf{T} = i \}
-\label{eq:supp_het_pdf}
 \end{equation*}
 
 \begin{equation*}
@@ -368,27 +365,27 @@ Framed in this way, the metapopulation is equivalent to the simple population wh
 
 \noindent From this we obtain
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{separated}} \rightarrow \textsc{\small{coalesced}} \} 
 = \frac{1}{N_h Q}
 \end{equation*}
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{separated}} \rightarrow \textsc{\small{cotransmitted}} \} 
 = \frac{(Q -1)(1-m)}{N_h Q}
 \end{equation*}
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{separated}} \rightarrow \textsc{\small{separated}} \} 
 = \frac{(N_h - 1)(1-m)^2}{N_h}
 \end{equation*}
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{separated}} \rightarrow \textsc{\small{metapopulation}} \} 
 = \frac{(Q -1)m}{N_h Q} + \frac{(N_h-1)(2m - m^2)}{N_h}
 \end{equation*}
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 = \frac{m(Q-1) + Q (N_h-1)(2m - m^2)}{N_h Q}
 \end{equation*}
 
@@ -454,22 +451,22 @@ Framed in this way, the metapopulation is equivalent to the simple population wh
 
 \noindent From this we obtain
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{cotransmitted}} \rightarrow \textsc{\small{coalesced}} \} 
 = \frac{2Q - Q \chi - 1}{Q(2Q-1)} 
 \end{equation*}
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{cotransmitted}} \rightarrow \textsc{\small{cotransmitted}} \} 
 = \frac{(Q-1)(1-m)(2Q - \chi Q - 1)}{Q(2Q-1)}
 \end{equation*}
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{cotransmitted}} \rightarrow \textsc{\small{separated}} \} 
 = \frac{\chi Q (1-m)^2}{2Q-1}
 \end{equation*}
 
-\begin{equation*} \label{eq:coal321}
+\begin{equation*}
 \Pr \{ \textsc{\small{cotransmitted}} \rightarrow \textsc{\small{metapopulation}} \} 
 = \frac{mQ(2Q - 3 + \chi + \chi Q - m \chi Q) + m}{Q(2Q-1)} 
 \end{equation*}
@@ -515,7 +512,7 @@ $\frac{mQ(2Q - 3 + \chi + \chi Q - m \chi Q) + m}{Q(2Q-1)}$  \\ [2ex]
 \section{Analysis of within-host variation}
 
 %%%%%%%%%%%%%%%%%%
-\subsection{Within-host heterozygosity in a population with $\chi=0$}
+\subsection{Within-host heterozygosity in a population with \texorpdfstring{$\chi=0$}{chi=0}}
 \label{supp_whh_chi_0}
 %%%%%%%%%%%%%%%%%%
 
@@ -582,7 +579,7 @@ where
 
 The first part of equation \ref{eq:supp_alpha_decay} describes geometric decay of the initial heterozygosity due to genetic drift, while the second part describes a new source of heterozygosity that gradually builds up due to the accumulation of mutations, attenuated by drift.  
 
-\paragraph{Equilibrium state of heterozygosity in a non-crossing transmission chain.} If a transmission chain continues for many generations without crossing with another transmission chain, its within-host heterozygosity $H_W$ equilibrates when the effect of genetic drift is equal and opposite to the effect of mutation.  We can evaluate this equilibrium value theoretically by letting $x \rightarrow \infty$ in equation \ref{eq:supp_alpha_decay}.  
+\paragraph{Equilibrium state of heterozygosity in a non-crossing transmission chain.} If a transmission chain continues for many generations without crossing with another transmission chain, its within host heterozygosity $H_W$ equilibrates when the effect of genetic drift is equal and opposite to the effect of mutation.  We can evaluate this equilibrium value theoretically by letting $x \rightarrow \infty$ in equation \ref{eq:supp_alpha_decay}.  
 
 \begin{equation*}
 H_W \approx H \alpha^\infty + 2u \sum_{i=0}^{\infty} \alpha^i
@@ -611,7 +608,7 @@ Q \approx \frac{\pi_W (1-2\mu)}{2 \mu (1 - \pi_W)} \approx \frac{\pi_W}{2 \mu}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Estimating within-host nucleotide diversity $\pi_W$ from genome sequencing data.}
+\subsection{Estimating within-host nucleotide diversity \texorpdfstring{$\pi_W$}{pi-w} from genome sequencing data.}
 \label{supp_Q_pi}
 
 To examine the frequency distribution of within-host nucleotide diversity $\pi_W$ in the \href{https://www.malariagen.net/resource/26}{MalariaGEN Pf6 dataset}, we begin by selecting high-quality samples (n = 5,970) and high-quality biallelic coding SNPs with vqslod > 3 (n = 502,221).   We then calculate
@@ -628,7 +625,7 @@ To examine the frequency distribution of within-host nucleotide diversity $\pi_W
 
 As in section \ref{supp_global_pi}, we restrict our analysis to coding regions because non-coding regions are error-prone due to their very high AT content with many short tandem repeats.  The MalariaGEN Pf6 dataset has quality control processes that endeavour to minimise variant calling errors but both false positive and false negative results are possible. Also, some \textit{P. falciparum} genes are under purifying selection (which tends to reduce $\pi$) while others are under diversifying selection (which tends to increase $\pi$).  
 
-A particularly important source of error for this analysis is overestimation of heterozygosity due to genome sequence alignment artefacts.  This affects some SNPs much more severely than others: we call these hyperhets and they are discussed in some detail in the supplementary material to reference \cite{Manske2012}.  To reduce the number of hyperhet artefacts, we filter out SNPs with $\widehat{H}_W \ge 0.02$, i.e. a mean minor allele frequency of $>0.01$.   However this is a crude method which may lead to us overestimate heterozygosity (if we have failed to exclude all artefactual heterozygote calls) or underestimate it (if we have over-corrected by filtering out valid heterozygote calls).
+A particularly important source of error for this analysis is overestimation of heterozygosity due to genome sequence alignment artefacts.  This affects some SNPs much more severely than others: we call these hyperhets and they are discussed in some detail in the supplementary material to reference \cite{Manske2012}.  To reduce the number of hyperhet artefacts, we filter out SNPs with $\widehat{H}_W \ge 0.02$, i.e. a mean minor allele frequency of $>0.01$.   However this is a crude method which may lead us to overestimate heterozygosity (if we have failed to exclude all artefactual heterozygote calls) or underestimate it (if we have over-corrected by filtering out valid heterozygote calls).
 
 With these caveats, we are left with 494,829 coding SNPs to analyse.   There are 12,028,350 coding positions in the \textit{P. falciparum} genome \cite{Gardner2002}.  If we make the simplifying assumption that there is no variation in the (12,028,350 - 494,829) coding positions that lie outside our set of 494,829 coding SNPs, then the within-host nucleotide diversity of coding positions is given by: 
 
@@ -646,7 +643,7 @@ A histogram of the number of samples with different values of $\pi_W$ is shown i
 \subsection{The effect of two transmission chains crossing, i.e. an episode of superinfection.}
 \label{supp_episode_superinfection}
 
-Imagine an episode of superinfection in which  a host acquires infection from two sources, host A and host B.  Let the $Q$ alleles acquired from host A have heterozygosity $H'_A$, and let the alleles acquired from host B have heterozygosity $H'_B$.
+Imagine an episode of superinfection in which a host acquires infection from two sources, host A and host B.  Let the $Q$ alleles acquired from host A have heterozygosity $H'_A$, and let the alleles acquired from host B have heterozygosity $H'_B$.
 
 Note the way that we have framed the problem.  $H'_A$ is not exactly the same as the heterozygosity of parasites within host A, as it allows for genetic drift and mutation that have occurred in the process of transmission from host A to the superinfected host.  Here we are imagining that we have already taken account of equation \ref{eq:supp_hahb} and this is factored into $H'_A$ and $H'_B$.
 
@@ -678,7 +675,7 @@ H_W =
 Thus superinfection acts to boost within-host heterozygosity because $H_S$ will generally be much greater than either $H'_A$ or $H'_B$.  
 
 %%%%%%%%%%%%%%%%
-\subsection{The relationship between $H_W$ and $H_S$ in a population with $\chi \geq 0$}
+\subsection{The relationship between \texorpdfstring{$H_W$ and $H_S$}{Hw and Hs} in a population with \texorpdfstring{$\chi \geq 0$}{chi>=0}}
 \label{derive_hwhs_1}
 %%%%%%%%%%%%%%%%
 
@@ -797,7 +794,7 @@ This agrees with the expected value for within-host heterozygosity in a populati
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Comparing methods for analysing the relationship of $F_{WS}$ to $\chi$ and $Q$.}
+\subsection{Comparing methods for analysing the relationship of \texorpdfstring{$F_{WS}$ to $\chi$ and $Q$}{Fws to chi and Q}.}
 \label{supp_compare_methods}
 
 We would like to know whether equation \ref{eq:supp_hwhs} gives the same result as Markov chain simulation in describing the relationship of $F_{WS}$ to $\chi$ and $Q$.  Figure \ref{fig:supp_fws_compare_methods} compares the two methods and confirms that they give extremely similar results when the effective number of hosts is large.  The results deviate when the effective number of hosts is small and this is expected as the simplifying assumptions used to derive equation \ref{eq:main_hwhs} become unreliable in these circumstances.
@@ -814,7 +811,7 @@ We would like to know whether equation \ref{eq:supp_hwhs} gives the same result 
 \label{fig:supp_fws_compare_methods}
 \end{figure}
 
-\subsection{Confounding of $F_{WS}$ by local population structure.}
+\subsection{Confounding of \texorpdfstring{$F_{WS}$}{Fws} by local population structure.}
 \label{supp_fws_pop_structure}  
 
 Estimates of $F_{WS}$ might be unreliable if there is a high degree of local population structure within the geographical area that we are sampling from, e.g. if we are sampling from a region with extremely mountainous or densely forested terrain, such that people and parasites rarely move between different villages.  If we let $H_R$ be the heterozygosity of the region that we are sampling from, and if $H_S$ is the heterozygosity of a single village, and $\widehat{H}_W$ the mean of within-host heterozygosity in a village, then 
