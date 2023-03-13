@@ -2,10 +2,16 @@
  
 \begin{document}
 
-\noindent\fbox{%
+\setlength{\fboxsep}{12pt}
+
+\noindent \fbox{%
     \parbox{\textwidth}{%
 
-\textbf{This glossary explains the terminology used in this paper.}  Note that this sometimes differs from common usage.
+{\Large \textbf{Glossary}}
+
+\medskip
+
+Note that the terminology used in this paper sometimes differs from common usage.
 
 %\begin{small}
 
@@ -19,7 +25,7 @@
 
 \medskip
 
-\textbf{Cotransmission.}  Occurs when a host or a vector is carrying a mixture of parasite alleles with different ancestral histories, and this is not directly due to superinfection.
+\textbf{Cotransmission.}  Occurs when a host or a vector is carrying a mixture of parasite alleles with different ancestral histories, subsequent to an episode of superinfection.
 
 \medskip
 
@@ -39,11 +45,7 @@
 
 \medskip
 
-\textbf{Haplotype.}  A specific DNA sequence observed at a haplotype locus.
-
-\medskip
-
-\textbf{Haplotype locus.}  A locus that extends over multiple nucleotide positions.
+\textbf{Haplotype locus.}  A locus that extends over multiple nucleotide positions.  A haplotype is a specific DNA sequence observed at a haplotype locus.
 
 \medskip
 
@@ -67,7 +69,7 @@
 
 \medskip
 
-\textbf{Point locus.}  A specific single nucleotide position in the genome. 
+\textbf{Point locus.}  A single nucleotide position in the genome. 
 
 \medskip
 
@@ -75,15 +77,19 @@
 
 \medskip
 
-\textbf{Superinfection.}  Infection of a host with parasites from more than one source in the previous generation.  In the genomic transmission graph this is equivalent to crossing of transmission chains.
+\textbf{Serial interval of transmission ($\tau$).}  The length of time corresponding to one generation of the transmission graph, i.e the mean interval between parasites entering one host and the next on a transmission chain.
 
 \medskip
 
-\textbf{Transmission bottleneck.}  A population bottleneck that affects the number of alleles that are passed from one generation of the genomic transmission graph to the next.  The quantum of transmission $Q$ and the effective number of hosts $N_h$ can both be considered as transmission bottlenecks.
+\textbf{Superinfection.}  Infection of a host with parasites from more than one source host in the previous generation.  This is equivalent to crossing of transmission chains.
 
 \medskip
 
-\textbf{Transmission chain.}  A sequence of host-to-host transmission events.   If we pick any node in the transmission graph, and trace a path forwards in time along the edges to another node, that is a transmission chain.
+\textbf{Transmission bottleneck.}  A population bottleneck that affects the number of alleles passed from one generation of the genomic transmission graph to the next.  The quantum of transmission $Q$ and the effective number of hosts $N_h$ can both be considered as transmission bottlenecks.
+
+\medskip
+
+\textbf{Transmission chain.}  A sequence of host-to-host transmission events, defined by selecting a node in the transmission graph and tracing a path forwards in time along the edges to another node.
 
 %\end{small}
 
