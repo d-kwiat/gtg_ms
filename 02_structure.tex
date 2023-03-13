@@ -68,7 +68,7 @@ When thinking about how genomes are transmitted through the generations, it is c
 
 Our idealised model imagines non-overlapping cycles of host to host transmission, and we refer to each cycle as a generation of the transmission graph (Figure \ref{fig:graph_2}).  We specify that: 
 
-\begin{figure}[h!]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=10cm]{181002_tg_basic.png}
 \caption{\textbf{An idealised model of the genomic transmission graph}.  We imagine that transmission occurs in non-overlapping generations.  In each generation there are $N_h$ hosts.  Each vector transmits $Q$ alleles to the recipient host.  $\chi$ is the crossing rate of transmission chains: this corresponds to the proportion of hosts that are superinfected from two sources, denoted in the figure by red nodes.}
@@ -85,7 +85,7 @@ Our idealised model imagines non-overlapping cycles of host to host transmission
 
 \end{enumerate}
 
-This idealised model is obviously not an exact represention of the way things work in the real world.  For example, we specify that a host exists at a discrete point in time, so if the same person was infected at multiple time points, we would have to treat these as separate instances of being a host.  However our simplifying assumptions will be familiar to population geneticists as they are closely based on the Wright-Fisher model.  Indeed if $\chi=0$ and $Q = 1$ then the transmission graph is equivalent to a Wright-Fisher population of $N_h$ haploid individuals and, as will become clear in the next section, the Wright-Fisher model can be viewed as a special case of the idealised transmission graph.
+This idealised model is obviously not an exact representation of the way things work in the real world.  For example, we specify that a host exists at a discrete point in time, so if the same person was infected at multiple time points, we would have to treat these as separate instances of being a host.  However our simplifying assumptions will be familiar to population geneticists as they are closely based on the Wright-Fisher model.  Indeed if $\chi=0$ and $Q = 1$ then the transmission graph is equivalent to a Wright-Fisher population of $N_h$ haploid individuals and, as will become clear in the next section, the Wright-Fisher model can be viewed as a special case of the idealised transmission graph.
 
 \paragraph{Serial interval of transmission $\tau$.}  \label{main_serial_interval}  Let $\tau$ be the length of time corresponding to a generation of the transmission graph.  From a epidemiological perspective, this is equivalent to the mean serial interval between parasites entering one host and the next on a transmission chain.  Our model assumes that the serial interval is constant but in practice it ranges from approximately 6 weeks - the minimum time required for parasites to complete a full developmental cycle within the host and vector - to several years.  The mean serial interval probably depends many local factors, including the intensity and seasonality of malaria transmission. At this stage we do not need to specify the value of $\tau$ but this will be necessary later when we are estimating rates of mutation and recombination, and for the purpose of illustration we shall suppose that $\tau$ is approximately 3 months.
 
