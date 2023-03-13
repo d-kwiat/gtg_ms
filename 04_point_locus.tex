@@ -7,6 +7,13 @@
 
 Now that we have a way to estimate time to coalescence, we can use this to estimate levels of genetic variation in the parasite population.  We start by focusing on an imaginary locus in the parasite genome.  We refer to a single nucleotide position as a \textit{point locus} and we define a \textit{haplotype locus} as a sequence that extends over multiple nucleotide positions (see glossary figure \ref{fig:supp_graph_17}).  A haplotype locus can undergo recombination whereas a point locus cannot.  We shall discuss haplotype loci in the next section but here we focus on point loci, so we can ignore recombination for the present.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{181001a_alleles.png}
+\caption{\textbf{We measure heterozygosity by comparing the genome sequence of two alleles at a locus}. An allele is an instance of the parasite genome and a locus is a specific location in the genome.  Here we see three alleles at two loci: locus A is a single nucleotide position (we call this a point locus) and locus B extends over multiple nucleotide positions (we call this a haplotype locus).  Both loci have been affected by mutation, and locus B has also been affected by recombination.}
+\label{fig:supp_graph_17}
+\end{figure}
+
 We say that alleles are \textit{homozygous} if they have the same DNA sequence, and that they are \textit{heterozygous} if they have different DNA sequences.  We define \textit{homozygosity} as the probability that two randomly sampled alleles at a particular locus are homozygous, and \textit{heterozygosity} as the probability that they are heterozygous.  Following population genetics convention, we shall denote homozygosity by $G$ and heterozygosity by $H$, where $H = 1 - G$.
 
 Imagine that we sample two alleles at a point locus and trace their lineages back in time until they coalesce.  Let $u$ be the mutation rate per generation at this locus and let \textbf{T} be a random variable representing time to coalescence of the two lineages.  The two alleles must have the same DNA sequence if neither lineage is affected by mutation from the time of sampling to the time of coalescence, so as described in Methods section \ref{supp_point_locus} we can obtain the expectation of heterozygosity
