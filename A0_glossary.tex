@@ -4,14 +4,14 @@
 
 \setlength{\fboxsep}{12pt}
 
-\noindent \fbox{%
+\noindent \fcolorbox{black}{lightgray}{%
     \parbox{\textwidth}{%
 
 {\Large \textbf{Glossary}}
 
 \medskip
 
-Note that the terminology used in this paper sometimes differs from common usage.
+Note that the terminology used in this paper is specific to the model described here and that it sometimes differs from common usage.
 
 %\begin{small}
 
@@ -25,15 +25,15 @@ Note that the terminology used in this paper sometimes differs from common usage
 
 \medskip
 
-\textbf{Cotransmission.}  Occurs when a host or a vector is carrying a mixture of parasite alleles with different ancestral histories, subsequent to an episode of superinfection.
+\textbf{Cotransmission.}  Passage of a mixture of parasite alleles with different ancestral histories along a single transmission chain subsequent to an episode of superinfection.
 
 \medskip
 
-\textbf{Crossing rate of transmission chains ($\chi$).}  The proportion of hosts that acquire parasites from more than one transmission chain, i.e. from more than one host in the previous generation.  This is equivalent to proportion of hosts that are superinfected.
+\textbf{Crossing rate of transmission chains ($\chi$).}  The proportion of hosts that acquire parasites from two transmission chains, i.e. from two source hosts in the previous generation.  This is equivalent to the proportion of hosts that are superinfected.
 
 \medskip
 
-\textbf{Effective number of hosts ($N_h$).}   The number of hosts that effectively transmit parasites in each generation of the transmission graph.  This is a form of population bottleneck. 
+\textbf{Effective number of hosts ($N_h$).}   The number of hosts that effectively transmit parasites in each generation of the transmission graph.  This is a form of transmission bottleneck. 
 
 \medskip
 
@@ -49,11 +49,11 @@ Note that the terminology used in this paper sometimes differs from common usage
 
 \medskip
 
-\textbf{Heterozygosity ($H$).}  The probability that two alleles sampled randomly from some population are heterozygous, i.e. that they have different DNA sequences. 
+\textbf{Heterozygosity ($H$).}  The probability that two alleles are heterozygous, i.e. that they have different DNA sequences at some locus. 
 
 \medskip
 
-\textbf{Homozygosity ($G$).}  The probability that two alleles sampled randomly from some population are homozygous, i.e. that they have the same DNA sequence.
+\textbf{Homozygosity ($G$).}  The probability that two alleles are homozygous, i.e. that they have the same DNA sequence at some locus.
 
 \medskip
 
@@ -73,11 +73,11 @@ Note that the terminology used in this paper sometimes differs from common usage
 
 \medskip
 
-\textbf{Quantum of transmission ($Q$).} The number of parasite alleles transmitted from one host to the next via a vector.  $Q$ summarises a complex series of bottlenecks in host-vector and vector-host transmission occurring during one generation of the parasite life-cycle.
+\textbf{Quantum of transmission ($Q$).} The number of parasite alleles copied from one generation to the next along a single transmission chain.  $Q$ summarises a complex series of bottlenecks in host-vector and vector-host transmission.
 
 \medskip
 
-\textbf{Serial interval of transmission ($\tau$).}  The length of time corresponding to one generation of the transmission graph, i.e the mean interval between parasites entering one host and the next on a transmission chain.
+\textbf{Serial interval ($\tau$).}  The mean interval of time between parasites entering one host and the next on a transmission chain, i.e. the duration of one generation of the transmission graph.
 
 \medskip
 
@@ -85,11 +85,11 @@ Note that the terminology used in this paper sometimes differs from common usage
 
 \medskip
 
-\textbf{Transmission bottleneck.}  A population bottleneck that affects the number of alleles passed from one generation of the genomic transmission graph to the next.  The quantum of transmission $Q$ and the effective number of hosts $N_h$ can both be considered as transmission bottlenecks.
+\textbf{Transmission bottleneck.}  A population bottleneck that affects the number of alleles copied from one generation of the genomic transmission graph to the next.  The quantum of transmission $Q$ and the effective number of hosts $N_h$ can both be considered as transmission bottlenecks.
 
 \medskip
 
-\textbf{Transmission chain.}  A sequence of host-to-host transmission events, defined by selecting a node in the transmission graph and tracing a path forwards in time along the edges to another node.
+\textbf{Transmission chain.}  A sequence of host-to-host transmission events, defined by selecting a node in the transmission graph and tracing a path forwards in time along the edges to other nodes.
 
 %\end{small}
 
