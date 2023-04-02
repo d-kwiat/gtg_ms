@@ -58,26 +58,26 @@ It is beyond the scope of this paper to carry out a sufficiently detailed analys
 \centering
 \includegraphics[width=12cm]{230117_wiho_het_0_01.png}
 \caption{
-\textbf{Distribution of $\pi_W$ in samples from around world.}  Levels of within-host nucleotide diversity obtained from a preliminary analysis of 5970 samples from 30 countries in the MalariaGEN Pf6 dataset \cite{MalariaGEN2021}.  The methods are described in Methods section \ref{supp_Q_pi}.  The results show a striking bimodal distribution for $\pi_W$ which is discussed in the text.
+\textbf{Distribution of $\pi_W$ in samples from around world.}  Levels of within-host nucleotide diversity obtained from a preliminary analysis of 5970 samples from 30 countries in the MalariaGEN Pf6 dataset \cite{MalariaGEN2021} as described in Methods section \ref{supp_Q_pi}.  This shows that $\pi_W$ has a striking bimodal distribution.
 }
 \label{fig:main_pi_w_distribution}
 \end{figure}
 
-Here we postulate that the high $\pi_W$ peak is caused by hosts with superinfection and cotransmission whereas the low $\pi_W$ peak is caused by hosts that lie on transmission chains that have not experienced superinfection in the recent past.  This interpretation of the data is supported by the further observation that the relative heights of the two peaks vary according to the population sampled, with the low $\pi_W$ peak being more prominent in regions of low transmission and the high $\pi_W$ peak more prominent in regions of high transmission, as outlined in Methods section \ref{supp_Q_pi}.  However we need to be aware of potential artefacts caused by genotyping errors, and in particular the phenomenon of hyper-heterozygosity due to incorrect alignment of short sequencing reads, as described in reference \cite{Manske2012}.  In the data shown in figure \ref{fig:main_pi_w_distribution} we attempt to exclude such artefacts by analysing only biallelic coding SNPs with good data quality scores and with mean minor allele frequency of $<1\%$ across all samples.
+Here we postulate that the high $\pi_W$ peak is caused by hosts with superinfection and cotransmission whereas the low $\pi_W$ peak is caused by hosts that lie on transmission chains that have not experienced superinfection in the recent past.  This interpretation of the data is supported by the observation that the relative heights of the two peaks vary according to the population sampled, with the low $\pi_W$ peak being more prominent in regions of low transmission and the high $\pi_W$ peak more prominent in regions of high transmission, as shown in figure \ref{fig:main_pi_w_regional}. 
 
-Taking the value of $\pi_W \approx 4 \times 10^{-7}$ together with a single nucleotide substitution rate of $\mu \approx 1.1 \times 10^{-8}$, equation \ref{eq:main_Q_est} gives us 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{230317_wiho_het_Africa.png}
+\includegraphics[width=7cm]{230317_wiho_het_SEA.png}
+\caption{
+\textbf{Distribution of $\pi_W$ in regions with high and low malaria transmission.}  Analysis of 3314 samples from Africa (left panel, high transmission) and 2341 samples from Southeast Asia (right panel, low transmission) in the MalariaGEN  Pf6 dataset \cite{MalariaGEN2021}.  Both regions show a bimodal distribution but the high $\pi_W$ peak is more prominent in West Africa and the low $\pi_W$ peak is more prominent in Southeast Asia.
+}
+\label{fig:main_pi_w_regional}
+\end{figure}
 
-\begin{equation}
-Q 
-\approx \frac{ \pi_W }{ 2 \mu }
-\approx \frac{ 4 \times 10^{-7}}{ 2 \times 1.1 \times 10^{-8}}
-\approx 18
-\label{eq:main_Q_sums}
-\end{equation}
+The value of the low $\pi_W$ peak is somewhat higher in Africa ($\sim4 \times 10^{-7}$) than in Southeast Asia ($\sim1.2 \times 10^{-7}$).  If we assume a single nucleotide substitution rate of $\mu \approx 1.1 \times 10^{-8}$ then from equation \ref{eq:main_Q_est} we obtain an estimate of $Q \approx 18$ in Africa and $Q \approx 5$ in Southeast Asia.
 
-Various experimental studies have quantified the number of sporozoites inoculated by an infectious mosquito: Rosenberg \textit{et al} estimated a median of 15 with very wide range \cite{Rosenberg1990} while Beier \textit{et al} estimated a geometric mean of 4.5 \cite{Beier1991}; and a review of the literature by Graumans \textit{et al} states that median inocula ranged between 8 and 39 sporozoites \cite{Graumans2020}.   
-
-It is reassuring that our preliminary estimate of $Q \approx 18$ is consistent with these experimental data.  However it would be wrong to treat $Q$ as a simple estimate of the number of inoculated sporozoites, as it summarises a series of transmission bottlenecks that occur before and after an infectious mosquito bite.  Other caveats about this estimate are discussed in Methods section \ref{supp_Q_pi}.
+An important caveat to this analysis is that genotyping errors could possibly contribute to the low $\pi_W$ peak, which would act to inflate estimates of $Q$.  Ideally we would like to evaluate the rate of within-host genotyping errors by analysing deep sequencing data from duplicate sequencing runs on the same samples, as has been done for SARS-CoV2 \cite{Tonkin-Hill2021}.  In the absence of such data, we have attempted to reduce the number of genotyping errors by analysing only biallelic coding SNPs with good data quality scores.  A potentially important source of error is incorrect alignment of sequence reads to paralogous sequences, giving rise to the phenomenon of hyperheterozygosity as described in reference \cite{Manske2012}.  Therefore we have excluded all SNPs whose within-host heterozygosity is $>2\%$ when averaged across all samples, which greatly reduces the risk of systematic errors of this type, at the cost of potentially deflating our estimates of $\pi_W$.  Other checks to exclude obvious systematic errors in the low $\pi_W$ peak are outlined in Methods section \ref{supp_Q_pi}, but clearly there is a need for replicated deep sequencing data and more detailed analyses in order to obtain a reliable estimate of the quantum of transmission in different epidemiological settings.  
 
 %%%%%%%%%%%%%
 

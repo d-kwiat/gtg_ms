@@ -13,7 +13,7 @@ The fundamental problem is that a superinfected host carries a mixture of parasi
 \begin{figure}[ht]
 \centering
 \includegraphics[width=12cm]{221102_superinfection.png}
-\caption{\textbf{Superinfection leads to cotransmission and recombination of distinct lineages.}  Coloured bars represent parasite genomes within a host.  Here we imagine that hosts 1 and 2 each carry a clonal population of parasites, and that the two clonal populations can be differentiated by genotyping, represented by blue and red respectively.  Host 3 is superinfected and carries a mixture of the two genotypes.  The two genotypes recombine when this mixture is cotransmitted from host 3 to host 4, and there is further recombination when the mixture is cotransmitted from host 4 to host 5.  The circles marked A and B represent two different loci in a parasite genome carried by host 5: locus A is inherited from host 1 whereas locus B is inherited from host 2.  Thus it is not possible to represent this parasite population by a single phlyogenetic tree - because the red/blue recombinant genomes cannot be mapped onto a single position on the tree.}
+\caption{\textbf{Superinfection leads to cotransmission and recombination of parasites with different ancestral histories.}  Coloured bars represent parasite genomes within a host.  Here we imagine that hosts 1 and 2 each carry a clonal population of parasites, and that the two clones have different genealogies represented by blue and red respectively.  Host 3 is superinfected and carries a mixture of the two clones.  The two clones recombine when this mixture is cotransmitted from host 3 to host 4, and there is further recombination when the mixture is cotransmitted from host 4 to host 5.  The circles marked A and B represent two different loci in a parasite genome carried by host 5: locus A is inherited from host 1 whereas locus B is inherited from host 2.  Thus it is not possible to represent this parasite population by a single phlyogenetic tree - because the red/blue recombinant genomes cannot be mapped onto a single position on the tree.}
 \label{fig:superinfection1}
 \end{figure}
 
@@ -25,7 +25,7 @@ Thus malaria infections have a broad spectrum of genetic complexity that reflect
 
 \paragraph{Modelling a parasite population with superinfection and recombination.} 
 
-One approach to this problem is to build an epidemiological model of malaria transmission coupled to a separate model that simulates the process of genetic variation \cite{Daniels2015,Watson2020,Hendry2021}.  This allows many different biological and epidemiological features to be incorporated into the model, at the cost of including many parameters with unknown values, and it tends to be computationally laborious.  
+One approach to this problem is to build an epidemiological model of malaria transmission coupled to a separate model that simulates the process of genetic variation \cite{Daniels2015,Watson2020,Hendry2021}.  Such models can incorporate a wide variety of biological and epidemiological features, but at the cost of including many parameters that are difficult to estimate and of being computationally laborious.  
 
 Here we describe an alternative approach to modelling the relationship between transmission dynamics and population genetics, based on a genomic transmission graph that takes account of superinfection and cotransmission.  We show how this naturally yields a Markov process for rapid coalescent simulation of a recombining parasite population as well as providing a theoretical framework for estimation of transmission parameters from empirical genetic observations.  
 
@@ -34,7 +34,7 @@ This paper is theoretical but is illustrated with empirical data relating to the
 \begin{figure}[h!]
 \centering
 \includegraphics[width=8cm]{181001_generation.png}
-\caption{\textbf{One cycle of host-to-host transmission corresponds to one generation of sexual reproduction by the parasite}.  \textit{Plasmodium falciparum} parasites reproduce asexually within their human host.  Sexual forms of the parasite (called gametocytes) develop within the host but do not mate until they are taken up by the \textit{Anopheles} mosquito vector.  Their progeny develop into asexual forms (called sporozoites) that are specialised for invading a new host.  Each generation of the transmission cycle starts with the inoculation of sporozoites by the vector into a new host.
+\caption{\textbf{One cycle of host-to-host transmission corresponds to one generation of sexual reproduction by the malaria parasite}.  \textit{Plasmodium falciparum} parasites reproduce asexually within their human host.  Sexual forms of the parasite (called gametocytes) develop within the host but do not mate until they are taken up by the \textit{Anopheles} mosquito vector.  Their progeny develop into asexual forms (called sporozoites) that are specialised for invading a new host.  Each generation of the transmission cycle starts with the inoculation of sporozoites by the vector into a new host.
 }
 \label{fig:one_generation}
 \end{figure}
